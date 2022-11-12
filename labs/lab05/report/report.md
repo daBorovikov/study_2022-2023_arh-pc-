@@ -1,9 +1,9 @@
 ---
 ## Front matter
-title: "Лабораторная работа No5. Создание и
+title: "Отчёт по лабораторной работе №5"
+subtitle: "Лабораторная работа No5. Создание и
 процесс обработки программ на языке
 ассемблера NASM"
-subtitle: "Простейший вариант"
 author: "Боровиков Даниил Александрович"
 
 ## Generic otions
@@ -18,7 +18,6 @@ csl: pandoc/csl/gost-r-7-0-5-2008-numeric.csl
 toc: true # Table of contents
 toc-depth: 2
 lof: true # List of figures
-lot: true # List of tables
 fontsize: 12pt
 linestretch: 1.5
 papersize: a4
@@ -55,9 +54,9 @@ biblatexoptions:
   - citestyle=gost-numeric
 ## Pandoc-crossref LaTeX customization
 figureTitle: "Рис."
+tableTitle: "Таблица"
 listingTitle: "Листинг"
 lofTitle: "Список иллюстраций"
-lotTitle: "Список таблиц"
 lolTitle: "Листинги"
 ## Misc options
 indent: true
@@ -106,16 +105,11 @@ header-includes:
 
 ![Создание исполняемого файла hello](image/8.png){ #fig:008 width=70% }
 
-
-Запустить на выполнение созданный исполняемый файл, находящийся в
-текущем каталоге, можно, набрав в командной строке:
-./hello
-
-Запустим созданный исполняемый файл, находящийся в текущем каталоге командой: ./hello(рис. [-@fig:00])
+Запустим созданный исполняемый файл, находящийся в текущем каталоге командой: ./hello(рис. [-@fig:009])
 
 ![Запуск исполняемого файла](image/9.png){ #fig:009 width=70% }
 
-# Самостоятельная работа
+ Самостоятельная работа
 
 В каталоге ~/work/arch-pc/lab05 с помощью команды cp создадим копию файла hello.asm с именем lab5.asm(рис. [-@fig:010])
 
@@ -129,13 +123,13 @@ header-includes:
 
 ![трансляция компоновка и запуск именного файла](image/12.png){ #fig:012 width=70% }
 
-Ссылка на github:
+Скопируем файлы hello.asm и lab5.asm в локальный репозиторий в каталог ~/work/study/2022-2023/"Архитектура компьютера"/arch-
+pc/labs/lab05/. Загрузим файлы на Github.(рис. [-@fig:013])
+
+![Копирование файлов в локальный репозиторий и загрузка на git hub](image/13.png){ #fig:013 width=70% }
+
+Ссылка на github: https://github.com/daBorovikov/study_2022-2023_arh-pc-
 
 # Выводы
 
 В ходе лабораторной работы мы освоили процедуры компиляции и сборки программ, написанных на ассемблере NASM, и написали собственную программу "hello world"
-
-# Список литературы{.unnumbered}
-
-::: {#refs}
-:::
